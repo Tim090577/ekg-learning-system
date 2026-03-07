@@ -1,0 +1,43 @@
+{
+  "name": "ekg-learning-frontend",
+  "version": "1.0.0",
+  "description": "EKG Learning System - Frontend Application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "antd": "^5.12.8",
+    "@ant-design/icons": "^5.2.6",
+    "three": "^0.160.0",
+    "@react-three/fiber": "^8.15.13",
+    "@react-three/drei": "^9.92.7",
+    "recharts": "^2.10.3",
+    "axios": "^1.6.5",
+    "react-router-dom": "^6.21.1",
+    "dayjs": "^1.11.10",
+    "framer-motion": "^10.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.11",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.1.1",
+    "vitest": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

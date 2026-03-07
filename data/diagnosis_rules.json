@@ -1,0 +1,381 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-07",
+  "conditions": [
+    {
+      "id": "normal_sinus_rhythm",
+      "name": "正常窦性心律",
+      "name_en": "Normal Sinus Rhythm",
+      "abbreviation": "NSR",
+      "criteria": {
+        "heart_rate_min": 60,
+        "heart_rate_max": 100,
+        "pr_interval_min": 120,
+        "pr_interval_max": 200,
+        "qrs_duration_max": 120,
+        "rhythm_regular": true,
+        "p_wave_present": true
+      },
+      "severity": "normal",
+      "description": "正常的窦房结起搏心律，P波、QRS波群、T波形态正常，心率60-100次/分。",
+      "recommendations": [
+        "继续监测",
+        "保持健康生活方式"
+      ],
+      "educational_notes": "正常窦性心律是心脏的正常电活动模式，由窦房结控制心跳。"
+    },
+    {
+      "id": "sinus_tachycardia",
+      "name": "窦性心动过速",
+      "name_en": "Sinus Tachycardia",
+      "abbreviation": "ST",
+      "criteria": {
+        "heart_rate_min": 100,
+        "heart_rate_max": 200,
+        "rhythm_regular": true,
+        "p_wave_present": true
+      },
+      "severity": "mild",
+      "description": "窦房结起搏，但心率超过100次/分。可能由运动、焦虑、发热、贫血等引起。",
+      "recommendations": [
+        "评估病因（运动、焦虑、发热、贫血、甲亢等）",
+        "治疗原发病",
+        "必要时使用β受体阻滞剂"
+      ],
+      "educational_notes": "窦性心动过速本身通常不是疾病，而是对生理或病理刺激的反应。"
+    },
+    {
+      "id": "sinus_bradycardia",
+      "name": "窦性心动过缓",
+      "name_en": "Sinus Bradycardia",
+      "abbreviation": "SB",
+      "criteria": {
+        "heart_rate_min": 40,
+        "heart_rate_max": 60,
+        "rhythm_regular": true,
+        "p_wave_present": true
+      },
+      "severity": "mild",
+      "description": "窦房结起搏，但心率低于60次/分。可见于运动员、药物影响或病理状态。",
+      "recommendations": [
+        "评估是否有症状（头晕、乏力、晕厥）",
+        "检查药物（β受体阻滞剂、钙通道阻滞剂）",
+        "有症状时考虑起搏器治疗"
+      ],
+      "educational_notes": "运动员的窦性心动过缓通常是生理性的，无需治疗。"
+    },
+    {
+      "id": "afib",
+      "name": "心房颤动",
+      "name_en": "Atrial Fibrillation",
+      "abbreviation": "AFib",
+      "criteria": {
+        "rhythm_irregular": true,
+        "p_wave_absent": true,
+        "rr_variability_high": true,
+        "f_waves_present": true
+      },
+      "severity": "moderate",
+      "description": "心房的快速、不规则、不协调的电活动，导致心室率不规则。",
+      "recommendations": [
+        "评估卒中风险（CHA₂DS₂-VASc评分）",
+        "考虑抗凝治疗（华法林或新型口服抗凝药）",
+        "控制心室率（β受体阻滞剂、钙通道阻滞剂、地高辛）",
+        "考虑节律控制（抗心律失常药物或电复律）",
+        "评估射频消融适应症"
+      ],
+      "educational_notes": "房颤是最常见的持续性心律失常，主要风险是血栓形成和卒中。",
+      "complications": ["卒中", "心力衰竭", "认知功能下降"]
+    },
+    {
+      "id": "stemi",
+      "name": "ST段抬高型心肌梗死",
+      "name_en": "ST-Elevation Myocardial Infarction",
+      "abbreviation": "STEMI",
+      "criteria": {
+        "st_elevation": true,
+        "st_elevation_threshold": 2.0,
+        "lead_pattern": "regional"
+      },
+      "severity": "critical",
+      "description": "冠状动脉急性完全闭塞导致的急性心肌梗死，需要紧急冠脉介入治疗。",
+      "recommendations": [
+        "立即启动急性冠脉综合征处理流程",
+        "给予阿司匹林和P2Y12抑制剂双重抗血小板治疗",
+        "90分钟内完成经皮冠状动脉介入（PCI）",
+        "如无法及时PCI，考虑溶栓治疗",
+        "给予肝素、β受体阻滞剂、ACEI/ARB",
+        "心脏标志物（肌钙蛋白）监测"
+      ],
+      "educational_notes": "STEMI是心脏急症，\"时间就是心肌\"。早期识别和治疗至关重要。",
+      "time_critical": true,
+      "target_door_to_balloon": 90,
+      "complications": ["心源性休克", "室颤", "心脏破裂", "心力衰竭"]
+    },
+    {
+      "id": "nstemi",
+      "name": "非ST段抬高型心肌梗死",
+      "name_en": "Non-ST-Elevation Myocardial Infarction",
+      "abbreviation": "NSTEMI",
+      "criteria": {
+        "st_depression": true,
+        "t_wave_inversion": true,
+        "troponin_elevated": true
+      },
+      "severity": "high",
+      "description": "冠状动脉部分闭塞或不稳定斑块破裂，导致心肌损伤但无ST段抬高。",
+      "recommendations": [
+        "双重抗血小板治疗",
+        "抗凝治疗",
+        "风险分层（TIMI或GRACE评分）",
+        "24-72小时内冠脉造影",
+        "β受体阻滞剂、ACEI/ARB、他汀类药物"
+      ],
+      "educational_notes": "NSTEMI的治疗策略取决于风险分层，高危患者需要早期介入。",
+      "complications": ["心力衰竭", "心律失常", "再次心梗"]
+    },
+    {
+      "id": "avb_first_degree",
+      "name": "一度房室传导阻滞",
+      "name_en": "First-Degree AV Block",
+      "abbreviation": "1° AVB",
+      "criteria": {
+        "pr_interval_min": 200,
+        "all_p_conducted": true
+      },
+      "severity": "mild",
+      "description": "房室传导时间延长，但所有P波都能传导至心室。",
+      "recommendations": [
+        "通常无需特殊治疗",
+        "监测PR间期变化",
+        "检查药物（如地高辛、β受体阻滞剂）",
+        "评估是否有进展为更高度阻滞的风险"
+      ],
+      "educational_notes": "一度房室传导阻滞通常是良性的，但应定期随访。"
+    },
+    {
+      "id": "avb_second_degree_mobitz_i",
+      "name": "二度I型房室传导阻滞（文氏阻滞）",
+      "name_en": "Second-Degree AV Block Mobitz Type I (Wenckebach)",
+      "abbreviation": "2° AVB Mobitz I",
+      "criteria": {
+        "pr_interval_progressive": true,
+        "dropped_qrs": true,
+        "pattern": "wenckebach"
+      },
+      "severity": "moderate",
+      "description": "PR间期逐渐延长直至一个P波不能传导。阻滞部位通常在房室结。",
+      "recommendations": [
+        "通常无需治疗",
+        "停用可能影响传导的药物",
+        "有症状时考虑起搏器",
+        "监测是否进展"
+      ],
+      "educational_notes": "Mobitz I型阻滞通常预后良好，阻滞部位在房室结。"
+    },
+    {
+      "id": "avb_second_degree_mobitz_ii",
+      "name": "二度II型房室传导阻滞",
+      "name_en": "Second-Degree AV Block Mobitz Type II",
+      "abbreviation": "2° AVB Mobitz II",
+      "criteria": {
+        "pr_interval_constant": true,
+        "dropped_qrs": true,
+        "pattern": "fixed"
+      },
+      "severity": "high",
+      "description": "PR间期固定，但间歇性有P波不能传导。阻滞部位在希氏束以下，有进展为完全性阻滞的风险。",
+      "recommendations": [
+        "强烈建议植入永久起搏器",
+        "即使无症状也应考虑起搏器",
+        "住院监测",
+        "准备临时起搏"
+      ],
+      "educational_notes": "Mobitz II型阻滞预后较差，有突然进展为三度阻滞的风险。",
+      "pacemaker_indication": "class I"
+    },
+    {
+      "id": "avb_third_degree",
+      "name": "三度房室传导阻滞（完全性房室传导阻滞）",
+      "name_en": "Third-Degree (Complete) AV Block",
+      "abbreviation": "3° AVB",
+      "criteria": {
+        "p_waves_independent": true,
+        "qrs_independent": true,
+        "av_dissociation": true
+      },
+      "severity": "critical",
+      "description": "心房和心室完全独立跳动，心房冲动完全不能传导至心室。",
+      "recommendations": [
+        "紧急植入起搏器",
+        "准备临时起搏",
+        "阿托品或异丙肾上腺素临时提高心率",
+        "ICU监护"
+      ],
+      "educational_notes": "完全性房室传导阻滞是心脏急症，需要紧急起搏治疗。",
+      "pacemaker_indication": "class I",
+      "time_critical": true
+    },
+    {
+      "id": "lbbb",
+      "name": "左束支传导阻滞",
+      "name_en": "Left Bundle Branch Block",
+      "abbreviation": "LBBB",
+      "criteria": {
+        "qrs_duration_min": 120,
+        "v1_pattern": "rS_or_QS",
+        "v6_pattern": "wide_R_no_Q",
+        "st_discordant": true
+      },
+      "severity": "moderate",
+      "description": "左束支传导障碍，导致QRS波群增宽，左室激动延迟。",
+      "recommendations": [
+        "评估有无基础心脏病",
+        "超声心动图评估左室功能",
+        "心衰患者考虑心脏再同步化治疗（CRT）",
+        "STEMI诊断需使用Sgarbossa准则"
+      ],
+      "educational_notes": "LBBB常提示存在基础心脏疾病，影响ST-T波判读。",
+      "special_considerations": "使用Sgarbossa准则诊断STEMI"
+    },
+    {
+      "id": "rbbb",
+      "name": "右束支传导阻滞",
+      "name_en": "Right Bundle Branch Block",
+      "abbreviation": "RBBB",
+      "criteria": {
+        "qrs_duration_min": 120,
+        "v1_pattern": "rSR_prime",
+        "v6_pattern": "wide_S"
+      },
+      "severity": "mild",
+      "description": "右束支传导障碍，导致QRS波群增宽，右室激动延迟。",
+      "recommendations": [
+        "新发现的RBBB应评估肺栓塞可能",
+        "评估有无基础心脏病",
+        "通常无需特殊治疗",
+        "定期随访"
+      ],
+      "educational_notes": "RBBB在健康人群中也可见，预后通常较LBBB好。"
+    },
+    {
+      "id": "long_qt_syndrome",
+      "name": "长QT综合征",
+      "name_en": "Long QT Syndrome",
+      "abbreviation": "LQTS",
+      "criteria": {
+        "qtc_male_min": 450,
+        "qtc_female_min": 470
+      },
+      "severity": "high",
+      "description": "QT间期延长，增加尖端扭转型室速和猝死风险。",
+      "recommendations": [
+        "避免QT间期延长药物",
+        "纠正电解质紊乱（低钾、低镁）",
+        "β受体阻滞剂治疗",
+        "高危患者考虑植入ICD",
+        "遗传性LQTS需家系筛查"
+      ],
+      "educational_notes": "长QT综合征可导致致命性心律失常，需要严格管理。",
+      "high_risk_factors": ["晕厥史", "心脏骤停史", "QTc>500ms", "家族猝死史"]
+    },
+    {
+      "id": "ventricular_tachycardia",
+      "name": "室性心动过速",
+      "name_en": "Ventricular Tachycardia",
+      "abbreviation": "VT",
+      "criteria": {
+        "heart_rate_min": 100,
+        "qrs_wide": true,
+        "qrs_duration_min": 120,
+        "ventricular_origin": true
+      },
+      "severity": "critical",
+      "description": "起源于心室的快速心律失常，可能危及生命。",
+      "recommendations": [
+        "血流动力学不稳定：立即电复律",
+        "血流动力学稳定：胺碘酮或利多卡因",
+        "治疗原发病（心肌缺血、电解质紊乱）",
+        "考虑植入ICD",
+        "射频消融"
+      ],
+      "educational_notes": "室速是严重的心律失常，可能退化为室颤。",
+      "time_critical": true,
+      "complications": ["室颤", "猝死", "心源性休克"]
+    },
+    {
+      "id": "brugada_syndrome",
+      "name": "Brugada综合征",
+      "name_en": "Brugada Syndrome",
+      "abbreviation": "BrS",
+      "criteria": {
+        "v1_v3_st_elevation": true,
+        "rbbb_pattern": true,
+        "coved_st": true
+      },
+      "severity": "high",
+      "description": "一种遗传性心律失常综合征，特征是右胸导联ST段抬高和室颤风险增加。",
+      "recommendations": [
+        "避免诱发因素（发热、某些药物）",
+        "有症状或高危患者植入ICD",
+        "发热时积极退热",
+        "家系筛查",
+        "基因检测"
+      ],
+      "educational_notes": "Brugada综合征是猝死的重要原因，需长期随访。",
+      "high_risk_factors": ["晕厥史", "心脏骤停史", "家族猝死史", "诱发出室颤"]
+    }
+  ],
+  "severity_levels": {
+    "normal": {
+      "label": "正常",
+      "color": "green",
+      "priority": 0
+    },
+    "mild": {
+      "label": "轻度",
+      "color": "yellow",
+      "priority": 1
+    },
+    "moderate": {
+      "label": "中度",
+      "color": "orange",
+      "priority": 2
+    },
+    "high": {
+      "label": "重度",
+      "color": "red",
+      "priority": 3
+    },
+    "critical": {
+      "label": "危急",
+      "color": "darkred",
+      "priority": 4
+    }
+  },
+  "reference_values": {
+    "heart_rate": {
+      "normal_min": 60,
+      "normal_max": 100,
+      "unit": "bpm"
+    },
+    "pr_interval": {
+      "normal_min": 120,
+      "normal_max": 200,
+      "unit": "ms"
+    },
+    "qrs_duration": {
+      "normal_max": 120,
+      "unit": "ms"
+    },
+    "qt_interval": {
+      "normal_max": 450,
+      "unit": "ms"
+    },
+    "qtc_interval": {
+      "male_max": 450,
+      "female_max": 470,
+      "unit": "ms"
+    }
+  }
+}

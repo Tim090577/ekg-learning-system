@@ -1,0 +1,102 @@
+MIT License
+
+Copyright (c) 2026 EKG Learning System Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+MEDICAL DISCLAIMER / 医疗免责声明
+================================================================================
+
+IMPORTANT - PLEASE READ CAREFULLY / 重要提示 - 请仔细阅读
+
+English:
+--------
+This software is provided for EDUCATIONAL AND RESEARCH PURPOSES ONLY. It is NOT 
+intended for use in clinical diagnosis, treatment, or any medical decision-making 
+process. 
+
+1. NOT A MEDICAL DEVICE: This software is not a medical device and has not been 
+   evaluated or approved by any regulatory authority (such as FDA, CE, NMPA).
+
+2. NO CLINICAL USE: This software should NOT be used for:
+   - Making clinical diagnoses
+   - Treatment planning or decisions
+   - Patient care or monitoring
+   - Any medical decision-making
+
+3. EDUCATIONAL PURPOSE: This software is designed solely to help students and 
+   medical professionals learn about ECG/EKG interpretation in a controlled 
+   educational environment.
+
+4. NO WARRANTY: The developers make no warranties, express or implied, regarding 
+   the accuracy, reliability, or completeness of any analysis, diagnosis, or 
+   information provided by this software.
+
+5. PROFESSIONAL CONSULTATION: Always consult qualified healthcare professionals 
+   for medical advice, diagnosis, and treatment. Never disregard professional 
+   medical advice or delay seeking it because of information provided by this 
+   software.
+
+6. LIABILITY: Under no circumstances shall the developers, contributors, or 
+   distributors of this software be liable for any damages, losses, or adverse 
+   events arising from the use or misuse of this software, including but not 
+   limited to medical malpractice, misdiagnosis, or patient harm.
+
+7. USER RESPONSIBILITY: Users of this software assume full responsibility for 
+   ensuring that their use complies with all applicable laws, regulations, and 
+   ethical guidelines in their jurisdiction.
+
+中文：
+------
+本软件仅供教育和研究目的使用，不得用于临床诊断、治疗或任何医疗决策过程。
+
+1. 非医疗器械：本软件不是医疗器械，未经任何监管机构（如 FDA、CE、NMPA）评估或批准。
+
+2. 禁止临床使用：本软件不得用于：
+   - 进行临床诊断
+   - 治疗计划或决策
+   - 患者护理或监测
+   - 任何医疗决策
+
+3. 教育目的：本软件仅设计用于帮助学生和医疗专业人员在受控的教育环境中学习
+   心电图解读。
+
+4. 无担保：开发者对本软件提供的任何分析、诊断或信息的准确性、可靠性或完整性
+   不作任何明示或暗示的保证。
+
+5. 专业咨询：请始终咨询合格的医疗保健专业人员以获取医疗建议、诊断和治疗。
+   切勿因本软件提供的信息而忽视专业医疗建议或延迟就医。
+
+6. 责任限制：在任何情况下，本软件的开发者、贡献者或分发者均不对因使用或误用
+   本软件而产生的任何损害、损失或不良事件承担责任，包括但不限于医疗过失、
+   误诊或患者伤害。
+
+7. 用户责任：本软件的用户完全有责任确保其使用符合其管辖范围内的所有适用法律、
+   法规和道德准则。
+
+================================================================================
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND 
+AGREE TO BE BOUND BY THIS LICENSE AND MEDICAL DISCLAIMER.
+
+使用本软件即表示您确认已阅读、理解并同意受本许可证和医疗免责声明的约束。
+
+================================================================================
