@@ -3,7 +3,7 @@ PDF 解析器
 从 PDF 文件中提取心电图数据
 """
 
-import PyPDF2
+from pypdf import PdfReader
 import pdfplumber
 import numpy as np
 from typing import Optional, Dict
@@ -205,7 +205,7 @@ class PDFParser:
         
         try:
             pdf_file = io.BytesIO(content)
-            reader = PyPDF2.PdfReader(pdf_file)
+            reader = PdfReader(pdf_file)
             
             # 提取元数据
             info = reader.metadata

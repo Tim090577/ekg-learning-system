@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     LOG_LEVEL: str = "INFO"
     
     # 数据库配置
-    DATABASE_URL: str = "postgresql://ekg_user:ekg_password_2026@localhost:5432/ekg_learning"
+    DATABASE_URL: str = "postgresql://ekg_user:changeme@localhost:5432/ekg_learning"
     
     # 安全配置
     SECRET_KEY: str = "your-secret-key-change-this-in-production"
